@@ -1,0 +1,179 @@
+body {
+    transition: .5s ease;
+    background-color: rgb(255, 153, 0);
+}
+
+.roww {
+    background: white;
+    border-radius: 5px;
+    width: 100vh;
+    transition: .5s ease;
+    color: orange;
+    box-shadow: 0 0 30px grey;
+    margin: 2.8rem;
+    
+}
+
+.roww button {
+    color: aliceblue;
+}
+
+input[type="checkbox"] {
+    float: right;
+    position: relative;
+    width: 5rem;
+    height: 1.9rem;
+    appearance: none;
+    background-color: rgb(255, 115, 0);
+    outline: none;
+    border-radius: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+    border: 1px white;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(0, 0, 0);
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    top: 2px;
+    left: 2px;
+    transition: .5s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(52px);
+}
+
+.ubah {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    background: aliceblue;
+    padding: 15px;
+    margin: 8px 5rem 0 0;
+    border-radius: 15px 0 15px 0;
+    color: rgb(255, 128, 0);
+    transition: .5s ease;
+    box-shadow: 0 0 30px grey;
+}
+
+
+.yellow {
+    transition: .5s ease-out;
+    background-color: black;
+
+    .box {
+        background: rgb(255, 166, 0);
+        box-shadow: 0 0 30px whitesmoke;
+    }
+
+    .nomor,
+    .act {
+        color: aliceblue;
+    }
+
+    .ubah {
+        background: orange;
+        color: aliceblue;
+        box-shadow: 0 0 30px whitesmoke;
+    }
+
+    .roww {
+        background: orange;
+        color: aliceblue;
+        box-shadow: 0 0 30px whitesmoke;
+    }
+
+    .roww button {
+        background-color: aliceblue;
+        color: black;
+    }
+    .button i, a{
+        color: aliceblue;
+    }
+}
+
+.up {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 255, 0, 0.7);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 30px grey;
+    width: 50vh;
+    height: 35vh;
+    background: white;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s ease, background 0.5s, transform 0.5s;
+}
+
+.box:hover{
+    transform: translateY(-20px);
+}
+
+.nomor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    transition: .5s ease;
+}
+
+.act {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    transition: .5s ease;
+}
+
+.button {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    
+}
+
+.button a {
+    margin-top: 2rem;
+    width: 150px;
+    padding: 13px;
+    transition: .2s ease;
+}
+
+.button i {
+    margin-right: 25px;
+    transition: .5s ease;
+}
+
