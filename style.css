@@ -169,11 +169,10 @@ input[type="checkbox"]:checked::before {
     margin-top: 2rem;
     width: 150px;
     padding: 13px;
-    transition: .2s ease;
 }
 
 .button i {
     margin-right: 25px;
-    transition: .5s ease;
+
 }
 
